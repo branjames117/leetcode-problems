@@ -13,6 +13,7 @@ var longestCommonPrefix = function (strs) {
     }
   }
 
+  // find the hashed prefix with the greatest rate of reoccurrencies
   const greatestPrefix = Object.keys(hash).reduce(function (a, b) {
     return hash[a] > hash[b] ? a : b;
   });
